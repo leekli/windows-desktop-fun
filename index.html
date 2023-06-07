@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Windows XP Desktop built in HTML, CSS, JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Lee Kirkham">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./assets/windows_logo.png"/>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>Windows XP Desktop</title>
+</head>
+<body>
+
+    <div class="desktop">
+    <div class="taskbar">
+        <!-- Taskbar start menu (left side) -->
+        <div class="taskbar-start-menu-icons">
+            <div class="icon start">
+                <img class="start" id="start_menu" src="./assets/start_classic_icon.png" alt="Click to start">
+            </div>
+            <div class="taskbar_seperator">
+                <img class="seperator" src="./assets/taskbar_seperator.png">
+            </div>
+            <div class="icon_taskbar_whole">
+                <div class="tooltip">
+                    <span class="tooltiptext">Show Desktop</span>
+                    <img class="taskbar_left_icon" src="./assets/show_desktop_icon.png">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">My Documents</span>
+                    <img class="taskbar_left_icon" src="./assets/my_documents_taskbar.png">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Internet Explorer</span>
+                    <img class="taskbar_left_icon" src="./assets/internet_explorer_taskbar.png">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Outlook Express</span>
+                    <img class="taskbar_left_icon" src="./assets/outlook_taskbar.png">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">MSN Explorer</span>
+                    <img class="taskbar_left_icon" src="./assets/msn_taskbar.png">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Calculator</span>
+                    <img class="taskbar_left_icon" src="./assets/calculator_taskbar.png">
+                </div>
+                <div class="tooltip">
+                    <span class="tooltiptext">Paint</span>
+                    <img class="taskbar_left_icon" src="./assets/paint_taskbar.png">
+                </div>
+                <div class="taskbar_seperator">
+                    <img class="seperator" src="./assets/taskbar_seperator.png">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Taskbar start menu (right side) -->
+            <div class="taskbar-right-icons">
+                <div class="taskbar_time">
+                    <div class="tooltip">
+                        <span class="tooltiptext">Volume Control: 72%</span>
+                        <img class="taskbar_right_icon" src="./assets/volume_taskbar.png" />
+                    </div>
+                    <div class="tooltip">
+                        <span class="tooltiptext">Connection: Online</span>
+                        <img class="taskbar_right_icon" src="./assets/network_taskbar.png" />
+                    </div>
+                    <div class="tooltip">
+                        <span class="tooltiptext">USB Connected</span>
+                        <img class="taskbar_right_icon" src="./assets/hardware_taskbar.png" />
+                    </div>
+                </div>
+                <div class="taskbar_time">
+                    <div class="tooltip">
+                        <span class="tooltiptext" id="date_time_tooltip"></span>
+                        <p id="taskbar_time_p"></p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+        <!-- Desktop Icons -->
+        <!-- My Computer -->
+        <div class="desktop_my_computer_icon">
+            <img class="my_computer" id="my_computer" src="./assets/my_computer.webp" />
+            <p>My Computer</p>
+        </div>
+        <br />
+        <!-- Recycle Bin -->
+        <div class="desktop_recycle_bin_icon">
+            <img class="recycle_bin" id="recycle_bin" src="./assets/recycle_bin_icon.webp" />
+            <p>Recycle Bin</p>
+        </div>
+        <br />
+        <!-- My Documents -->
+        <div class="desktop_my_documents_icon">
+            <img class="my_documents" id="my_documents" src="./assets/my_documents_icon.webp" />
+            <p>My Documents</p>
+        </div>
+        <br />
+        <!-- Internet Explorer -->
+        <div class="desktop_internet_explorer_icon">
+            <img class="internet_explorer" id="internet_explorer" src="./assets/internet_explorer_logo.webp" />
+            <p>Internet Explorer</p>
+        </div>
+        <br />
+        <!-- MSN Messenger -->
+        <div class="desktop_msn_messenger_icon">
+            <img class="msn_messenger" id="msn_messenger" src="./assets/msn_messenger_logo.webp" />
+            <p>MSN Messenger</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
