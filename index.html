@@ -14,7 +14,37 @@
 </head>
 <body>
 
+    <!-- Container for all elements of the desktop-->
     <div class="desktop">
+
+        <!-- The Start Menu Modal -->
+        <div id="start_menu_modal" class="start_menu_modal">   
+            <!-- Start Menu content -->
+            <div class="start_menu_content">
+                <h1 id="start_menu_header"><i>Administrator</i></h1>
+                <br />
+                <div class="start_menu_programs_section">
+                    <img class="start_menu_program" src="./assets/internet_explorer_taskbar.png" />&nbsp;<strong>Internet</strong>
+                    <br />
+                    <img class="start_menu_program" src="./assets/outlook_express_logo.png" />&nbsp;<strong>E-mail</strong>
+                </div>
+                <hr id="bottom_hr_bar" />
+                <p>Start Menu Icons and Folders here</p>
+                <p>Start Menu Icons and Folders here</p>
+                <p>Start Menu Icons and Folders here</p>
+                <p>Start Menu Icons and Folders here</p>
+                <p>Start Menu Icons and Folders here</p>
+                <br />
+                <hr id="bottom_hr_bar" />
+                <div class="log_off_shut_down_section">
+                    <img class="log_off_shut_down_img" src="./assets/log_off_icon.png" />&nbsp;Log Off
+                    &emsp;&emsp;
+                    <img class="log_off_shut_down_img" src="./assets/turn_off_icon.png" />&nbsp;Turn Off Computer
+                </div>
+            </div>                  
+        </div>
+
+    <!-- Contained for the whole taskbar -->
     <div class="taskbar">
         <!-- Taskbar start menu (left side) -->
         <div class="taskbar-start-menu-icons">
@@ -89,31 +119,31 @@
         <!-- My Computer -->
         <div class="desktop_my_computer_icon">
             <img class="my_computer" id="my_computer" src="./assets/my_computer.webp" />
-            <p>My Computer</p>
+            <p class="desktop_icon_text">My Computer</p>
         </div>
         <br />
         <!-- Recycle Bin -->
         <div class="desktop_recycle_bin_icon">
             <img class="recycle_bin" id="recycle_bin" src="./assets/recycle_bin_icon.webp" />
-            <p>Recycle Bin</p>
+            <p class="desktop_icon_text">Recycle Bin</p>
         </div>
         <br />
         <!-- My Documents -->
         <div class="desktop_my_documents_icon">
             <img class="my_documents" id="my_documents" src="./assets/my_documents_icon.webp" />
-            <p>My Documents</p>
+            <p class="desktop_icon_text">My Documents</p>
         </div>
         <br />
         <!-- Internet Explorer -->
         <div class="desktop_internet_explorer_icon">
-            <img class="internet_explorer" id="internet_explorer" src="./assets/internet_explorer_logo.webp" />
-            <p>Internet Explorer</p>
+            <img class="internet_explorer" id="internet_explorer" src="./assets/internet_explorer_logo.png" />
+            <p class="desktop_icon_text">Internet Explorer</p>
         </div>
         <br />
         <!-- MSN Messenger -->
         <div class="desktop_msn_messenger_icon">
             <img class="msn_messenger" id="msn_messenger" src="./assets/msn_messenger_logo.webp" />
-            <p>MSN Messenger</p>
+            <p class="desktop_icon_text">MSN Messenger</p>
         </div>
 
     </div>

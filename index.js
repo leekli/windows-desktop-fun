@@ -7,13 +7,18 @@ const recycleBinIcon = document.getElementById("recycle_bin");
 const myDocumentsIcon = document.getElementById("my_documents");
 const internetExplorerIcon = document.getElementById("internet_explorer");
 const msnMessengerIcon = document.getElementById("msn_messenger");
+const startMenuModal = document.getElementById("start_menu_modal");
 
-// Event Listeners
-const startMenuClicked = startMenuButton.addEventListener(
-  "click",
-  startMenuClick
-);
+// Start Menu Event Listeners
+startMenuButton.addEventListener("click", startMenuClick);
+window.onclick = function (event) {
+  if (event.target === startMenuModal) {
+    startMenuModal.style.display = "none";
+    startMenuClick();
+  }
+};
 
+// Desktop Icons Event Listeners
 myComputerIcon.addEventListener("mouseover", desktopIconHoverOn);
 myComputerIcon.addEventListener("mouseleave", desktopIconHoverOff);
 recycleBinIcon.addEventListener("mouseover", desktopIconHoverOn);
@@ -79,9 +84,11 @@ function startMenuClick() {
   if (startMenuClickedFlag === false) {
     startMenuButton.src = "./assets/start_button_clicked.png";
     startMenuClickedFlag = true;
+    startMenuModal.style.display = "block";
   } else {
     startMenuButton.src = "./assets/start_classic_icon.png";
     startMenuClickedFlag = false;
+    startMenuModal.style.display = "none";
   }
 }
 
