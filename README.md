@@ -6,13 +6,19 @@ This is my attempt to recreate the Windows XP Classic Theme desktop using only v
 
 It's a bit of fun, and a little hobby project to help me get deeper into CSS and DOM events 🎉
 
-<strong>It's been mostly built and tested with the <a target="_blank" rel="noopener noreferrer" href="https://brave.com/">`Brave Browser`</a>, and `Safari`.</strong>
+<strong>It's been mostly built and tested with the <a target="_blank" rel="noopener noreferrer" href="https://brave.com/">`Brave Browser`</a>, and `Safari`</strong>. Not tested on Chrome, Firefox, etc.
+
+It is **not** best viewed on a Mobile device as it's built to be a desktop recreation 😉.
 
 <sub>_Note: Windows XP, XP logo and all icons/other logos are Microsoft's property._</sub>
 
 <hr />
 
 ## 📷 Demo Images and Video 🎥
+
+<br />
+
+### 🎮 **Try it yourself, here:** <a arget="_blank" rel="noopener noreferrer" href="https://windows-xp-desktop.netlify.app/">https://windows-xp-desktop.netlify.app/</a>
 
 <br />
 
