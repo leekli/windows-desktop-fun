@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main desktop */
+
+div.desktop {
+    /* background-image: url("./assets/bliss-wallpaper.webp"); */
+    background-color: rgb(71, 109, 161);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+div.icon {
+    height: 35px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+img.start {
+    height: 30px;
+}
+
+/* My computer icon */
+.desktop_my_computer_icon {
+    width: 100%;
+    display: grid;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10px;
+}
+
+img.my_computer {
+    height: 50px;
+    margin: 10px;
+}
+
+.desktop_icon_text {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    color: white;
+    width: 100%;
+}
+
+/* Recycle bin icon */
+.desktop_recycle_bin_icon {
+    width: 100%;
+    display: grid;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10px;
+}
+
+img.recycle_bin {
+    height: 50px;
+    margin: 10px;
+}
+
+/* My documents icon */
+.desktop_my_documents_icon {
+    width: 100%;
+    display: grid;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10px;
+}
+
+img.my_documents {
+    height: 50px;
+    margin: 10px;
+}
+
+
+/* Internet Explorer icon */
+.desktop_internet_explorer_icon {
+    width: 100%;
+    display: grid;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10px;
+}
+
+img.internet_explorer {
+    height: 50px;
+    margin: 10px;
+}
+
+
+/* MSN Messenger icon */
+.desktop_msn_messenger_icon {
+    width: 100%;
+    display: grid;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10px;
+}
+
+img.msn_messenger {
+    height: 50px;
+    margin: 10px;
+}
+
+
+/* Taskbar */ 
+div.taskbar {
+    width: 100vw;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(211, 208, 201);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(244, 243, 241);
+    display: flex;
+    align-items: center;
+}
+
+.taskbar_seperator {
+    margin-left: 0.2%;
+    display: flex;
+    align-items: center;
+}
+
+.seperator {
+    height: 65%;
+}
+
+img.taskbar_left_icon {
+    height: 23px;
+    padding-top: 5px;
+    padding-right: 6%;
+    margin-right: 10px;
+}
+
+img.taskbar_right_icon {
+    height: 18px;
+    padding-top: 5px;
+    padding-right: 6%;
+    padding-left: 5px;
+}
+
+.icon_taskbar_whole {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 0.7%;
+}
+
+div.taskbar>.taskbar-start-menu-icons {
+    display: flex;
+    justify-content: left;
+    flex: 1;
+    align-items: left;
+}
+
+div.taskbar>.taskbar-right-icons {
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+    height: 75%;
+    align-items: right;
+    border-style: solid;
+    border-left-color: rgb(128, 128, 128);
+    border-top-color: rgb(128, 128, 128);
+    border-right-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+div.taskbar>.taskbar-right-icons p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    margin: 0 10px;
+    padding-top: 8%;
+}
+
+/* Tooltips */
+.tooltip {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    visibility: hidden;
+    width: 100px;
+    background-color: rgb(255, 255, 227);
+    color: black;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    padding: 2px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* Start Menu Modal (background) */
+.start_menu_modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0%;
+    top: 0%;
+    width: 100%; 
+    height: 100%;
+  }
+  
+  /* Start Menu Actual content */
+  .start_menu_content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+    background-color: rgb(211, 208, 201);
+    margin: 0%;
+    padding: 3px;
+    border: 1px solid #888;
+    width: 450px;
+    border-style: solid;
+    border-right-color: rgb(128, 128, 128);
+    border-bottom-color: rgb(128, 128, 128);
+    border-top-color: rgb(255, 255, 255);
+    border-left-color: rgb(255, 255, 255);
+    box-shadow: 8px 8px 6px -6px black;
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+  }
+
+  .start_menu_content>#start_menu_header {
+    height: 15%;
+    padding: 15px;
+    background-color: red;
+    background-image:
+      linear-gradient(
+        to right, 
+        rgb(16,35,105), rgb(171,195,231)
+      );
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: white;
+  }
+
+  .start_menu_content>#bottom_hr_bar {
+    border-top: 1px solid rgb(128,128,128);
+    border-bottom: 1px solid rgb(211,208,201);
+  }
+
+  br {
+    display: block; 
+    content: ""; 
+    margin-top: 10px;
+}
+
+  #start_menu_log_off{
+    width: 85px;
+    float: left;
+    margin: 3px
+  }
+
+  #start_menu_turn_off{
+    width: 150px;
+    float: right;
+    margin: 3px
+  }
+
+  .log_off_shut_down_section {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    float: right;
+  }
+
+  img.log_off_shut_down_img {
+    height: 30px;
+    border: solid;
+    border-color: white;
+    border-radius: 15%;
+    margin: 0%;
+    padding: 0%;
+}
+
+img.start_menu_program {
+    height: 35px;
+}
+
+.start_menu_flex_parent {
+    display: flex;
+    width: 100%;
+  }
+  
+.start_menu_flex_child {
+    flex: 1;
+    margin: 1px;
+}
+
+.start_menu_flex_child_verticle_bar {
+    flex: 0;
+    margin: 1px;
+}
+  
+.start_menu_flex_child:first-child {
+    margin-right: 0px;
+}

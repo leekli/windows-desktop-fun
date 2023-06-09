@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Windows XP Desktop built in HTML, CSS, JavaScript">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Windows XP, Classic Theme, Windows, Microsoft, Classic, Vanilla">
     <meta name="author" content="Lee Kirkham">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./assets/windows_logo.png"/>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/desktop.js" defer></script>
+    <script src="./js/startMenu.js" defer></script>
+    <script src="./js/taskbar.js" defer></script>
     <title>Windows XP Desktop</title>
 </head>
 <body>
@@ -23,23 +25,114 @@
             <div class="start_menu_content">
                 <h1 id="start_menu_header"><i>Administrator</i></h1>
                 <br />
+            <div class="start_menu_flex_parent">
+            <div class="start_menu_flex_child">
                 <div class="start_menu_programs_section">
-                    <img class="start_menu_program" src="./assets/internet_explorer_taskbar.png" />&nbsp;<strong>Internet</strong>
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/internet_explorer_taskbar.png" style="float: left; text-align: justify;" />&nbsp;<strong class="start_menu_highlight">Internet</strong><br>&nbsp;Internet Explorer
+                    </div>
                     <br />
-                    <img class="start_menu_program" src="./assets/outlook_express_logo.png" />&nbsp;<strong>E-mail</strong>
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/outlook_express_logo.png" style="float: left; text-align: justify;" />&nbsp;<strong class="start_menu_highlight">E-mail</strong><br>&nbsp;Outlook Express
+                    </div>
                 </div>
+                <br />
                 <hr id="bottom_hr_bar" />
-                <p>Start Menu Icons and Folders here</p>
-                <p>Start Menu Icons and Folders here</p>
-                <p>Start Menu Icons and Folders here</p>
-                <p>Start Menu Icons and Folders here</p>
-                <p>Start Menu Icons and Folders here</p>
+                <div class="start_menu_programs_section">
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/msn_explorer_logo.png" />&nbsp;MSN Explorer
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/wmp_logo.png" />&nbsp;Windows Media Player
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/wmm_logo.png" />&nbsp;Windows Movie Maker
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/tour_xp_logo.png" />&nbsp;Tour Windows XP
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/files_transfer_logo.png" />&nbsp;Files and Settings Transfer Wizard
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/notepad_logo.png" />&nbsp;Notepad
+                    </div>
+                </div>
+                <br />
+                <hr id="bottom_hr_bar" />
+                <div class="start_menu_all_programs_section" class="start_menu_highlight">
+                    <div>
+                        <br />
+                        <center><p class="start_menu_highlight">All Programs&nbsp;&nbsp;<img src="./assets/all_programs_arrow.jpeg"></p></center>
+                    </div>
+                </div>
+            </div>
+            <div class="start_menu_flex_child_verticle_bar">
+                <img src="./assets/start_menu_verticle_bar.jpeg" height="100%" />
+            </div>
+            <div class="start_menu_flex_child">
+                <div class="start_menu_programs_section">
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/my_documents_icon.png" /><strong class="start_menu_highlight">&nbsp;My Documents</strong>
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/my_pictures_icon.png" /><strong class="start_menu_highlight">&nbsp;My Pictures</strong>
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/my_music_icon.png" /><strong class="start_menu_highlight">&nbsp;My Music</strong>
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/my_documents_icon.png" /><strong class="start_menu_highlight">&nbsp;My Computer</strong>
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/my_network_places_icon.png" /><strong class="start_menu_highlight">&nbsp;My Network Places</strong>
+                    </div>
+                    <br />
+                    <hr id="bottom_hr_bar" />
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/control_panel_icon.png" />&nbsp;Control Panel
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/admin_tools_icon.png" />&nbsp;Administrative Tools&nbsp;&nbsp;<img src="./assets/all_programs_arrow.jpeg">
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/connect_to_icon.png" />&nbsp;Connect To&nbsp;&nbsp;<img src="./assets/all_programs_arrow.jpeg">
+                    </div>
+                    <br />
+                    <hr id="bottom_hr_bar" />
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/help_and_support_icon.png" />&nbsp;Help and Support
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/search_icon.png" />&nbsp;Search
+                    </div>
+                    <br />
+                    <div class="start_menu_highlight">
+                        <img class="start_menu_program start_menu_highlight" src="./assets/run_icon.png" />&nbsp;Run...
+                    </div>
+                </div>
+            </div>
+            </div>
                 <br />
                 <hr id="bottom_hr_bar" />
                 <div class="log_off_shut_down_section">
-                    <img class="log_off_shut_down_img" src="./assets/log_off_icon.png" />&nbsp;Log Off
+                    <div class="start_menu_highlight" id="start_menu_log_off"><img class="log_off_shut_down_img" src="./assets/log_off_icon.png" />&nbsp;Log Off</div>
                     &emsp;&emsp;
-                    <img class="log_off_shut_down_img" src="./assets/turn_off_icon.png" />&nbsp;Turn Off Computer
+                    <div class="start_menu_highlight" id="start_menu_turn_off"><img class="log_off_shut_down_img" src="./assets/turn_off_icon.png" />&nbsp;Turn Off Computer</div>
                 </div>
             </div>                  
         </div>
@@ -142,7 +235,7 @@
         <br />
         <!-- MSN Messenger -->
         <div class="desktop_msn_messenger_icon">
-            <img class="msn_messenger" id="msn_messenger" src="./assets/msn_messenger_logo.webp" />
+            <img class="msn_messenger" id="msn_messenger" src="./assets/msn_messenger_logo.png" />
             <p class="desktop_icon_text">MSN Messenger</p>
         </div>
 
