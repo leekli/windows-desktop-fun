@@ -10,7 +10,8 @@ It's a bit of fun, and a little hobby project to help me get deeper into CSS and
 
 It is **not** best viewed on a Mobile device as it's built to be a desktop recreation 😉.
 
-<sub>_Note: Windows XP, XP logo and all icons/other logos are Microsoft's property._</sub>
+<sub>_Note: Windows XP, XP logo and all icons/other logos are Microsoft's property._</sub><br />
+<sub>_Note: Credit for the high res XP icons go to <a target="_blank" rel="noopener noreferrer" href="https://www.deviantart.com/marchmountain/art/Windows-XP-High-Resolution-Icon-Pack-916042853">`marchmountain` on DeviantArt.</a>_</sub>
 
 <hr />
 
@@ -36,7 +37,4 @@ It is **not** best viewed on a Mobile device as it's built to be a desktop recre
 
 **Short Video Demo:**
 
-<video width="80%" height="80%" controls>
-  <source src="./readme_assets/windows_desktop_demo.mov"type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<img src="./readme_assets/windows_desktop_demo.gif" width="90%" />
